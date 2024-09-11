@@ -1,0 +1,31 @@
+<section>
+    <div>
+        <h3>
+            Nuevo empleado:
+        </h3>
+        <form (submit)="onSubmit($event)">
+            <div>
+                <label for="codigo">Código empleado:</label>
+                <input [(ngModel)]="codigo" name="codigo" type="number" placeholder="Ingresa el código del empleado">
+            </div>
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input [(ngModel)]="nombre" name="nombre" type="text" placeholder="Ingresa el nombre del empleado">
+            </div>
+            <div>
+                <label for="apellido1">Apellido:</label>
+                <input [(ngModel)]="apellido1" name="apellido1" type="text" placeholder="Ingresa el primer apellido del empleado">
+            </div>
+            <div>
+                <label for="apellido2">Apellido:</label>
+                <input [(ngModel)]="apellido2" name="apellido2" type="text" placeholder="Ingresa el segundo apellido del empleado">
+            </div>
+            <div>
+                <label for="codigo_departamento">Código departamento:</label>
+                <input [(ngModel)]="codigo_departamento" name="codigo_departamento" type="text" placeholder="Ingresa el código del departamento del empleado">
+            </div>
+
+            <input type="submit" class="button">
+        </form>
+    </div>
+</section>

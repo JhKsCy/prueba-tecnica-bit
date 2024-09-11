@@ -1,0 +1,23 @@
+<section>
+    <div class="card" *ngFor="let departamento of departamentos" (click)="mostrarDepartamento(departamento._id)">
+        <div class="card_code">
+            <span>
+                *
+            </span>
+            <h5>
+                Código:
+            </h5>
+            <p>
+                {{ departamento._id }}
+            </p>
+        </div>
+        <div class="card_name">
+            <h3>
+                Departamento de
+                <br>
+                {{ departamento.nombre }}
+            </h3>
+        </div>
+    </div>
+</section>
+

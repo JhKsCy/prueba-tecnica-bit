@@ -1,0 +1,23 @@
+<section>
+    <div class="switch-category">
+        <div>
+            <h3 [class.hidden]="!menuHidden">
+                Empleados
+            </h3>
+            <h3 [class.hidden]="menuHidden">
+                Departamentos
+            </h3>
+        </div>
+        <div>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round" (click)="mostrar()"></span>
+            </label>
+        </div>
+    </div>
+    <div class="return">
+        <p (click)="volver()">
+            Volver al incio
+        </p>
+    </div>
+</section>

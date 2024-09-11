@@ -1,0 +1,15 @@
+<section>
+    <div *ngIf="data">
+        <h3>
+            Editar departamento:
+        </h3>
+        <form [formGroup]="formGroup" (submit)="onSubmit($event)">
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input formControlName="nombre" name="nombre" type="text" placeholder="Ingresa el nombre del departamento">
+            </div>
+
+            <input type="submit" class="button">
+        </form>
+    </div>
+</section>

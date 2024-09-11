@@ -1,0 +1,43 @@
+<section class="section-card" *ngIf="empleado">
+    <div class="card">
+        <div class="card_code">
+            <span>
+                *
+            </span>
+            <h5>
+                Código:
+            </h5>
+            <p>
+                {{ empleado.codigo }}
+            </p>
+        </div>
+        <div class="card_name">
+            <h3>
+                {{ empleado.nombre }} {{ empleado.apellido1 }}
+                <br>
+                {{ empleado.apellido2 }}
+            </h3>
+        </div>
+        <div class="card_department">
+            <p>
+                Código departamento: {{ empleado.codigo_departamento }}
+            </p>
+        </div>
+    </div>
+
+    <section class="section-buttons">
+        <div>
+            <button (click)="editarEmpleado(empleado._id)">
+                Editar
+            </button>
+        </div>
+        <div>
+            <button (click)="eliminarEmpleado(empleado._id)">
+                Eliminar
+            </button>
+        </div>
+    </section>
+
+</section>
+
+

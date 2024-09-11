@@ -1,0 +1,15 @@
+<section>
+    <div class="options" [class.hidden]="menuHidden" (mouseleave)="mostrar()">
+        <p (click)="nuevoEmpleado()">
+            Nuevo empleado
+        </p>
+        <p (click)="nuevoDepartamento()">
+            Nuevo departamento
+        </p>
+    </div>
+    <div class="new-entry" [class.hovered]="!menuHidden" (mouseenter)="mostrar()">
+        <h3>
+            +
+        </h3>
+    </div>
+</section>
